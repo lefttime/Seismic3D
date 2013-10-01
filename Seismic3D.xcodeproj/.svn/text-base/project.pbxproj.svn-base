@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402F93BF17618B2F001C41A3 /* SoSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93BE17618B2F001C41A3 /* SoSeparator.m */; };
+		402F93C217618D72001C41A3 /* SoTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93C117618D72001C41A3 /* SoTransformation.m */; };
+		402F93C617618DB1001C41A3 /* SoTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93C517618DB1001C41A3 /* SoTransform.m */; };
+		402F93C917618DBD001C41A3 /* SoTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93C817618DBD001C41A3 /* SoTranslation.m */; };
+		402F93CC17618DCA001C41A3 /* SoScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93CB17618DCA001C41A3 /* SoScale.m */; };
+		402F93CF17618DD5001C41A3 /* SoRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F93CE17618DD5001C41A3 /* SoRotation.m */; };
+		4034E03617621FD80002C56F /* SoMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E03517621FD80002C56F /* SoMaterial.m */; };
+		4034E039176226790002C56F /* SoReplacedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E038176226790002C56F /* SoReplacedElement.m */; };
+		4034E03C176226B30002C56F /* SoAmbientColorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E03B176226B30002C56F /* SoAmbientColorElement.m */; };
+		4034E03F17622A390002C56F /* SoDiffuseColorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E03E17622A390002C56F /* SoDiffuseColorElement.m */; };
+		4034E04217622A4D0002C56F /* SoEmissiveColorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E04117622A4D0002C56F /* SoEmissiveColorElement.m */; };
+		4034E04517622A580002C56F /* SoSpecularColorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E04417622A580002C56F /* SoSpecularColorElement.m */; };
+		4034E04817622A600002C56F /* SoShininessElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E04717622A600002C56F /* SoShininessElement.m */; };
+		4034E04B17622A680002C56F /* SoTransparencyElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4034E04A17622A680002C56F /* SoTransparencyElement.m */; };
+		4052A3E0173E44880038505F /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4052A3DF173E44880038505F /* SimpleVertex.glsl */; };
+		4052A3E2173E44D40038505F /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4052A3E1173E44D40038505F /* SimpleFragment.glsl */; };
+		40751F29173E135D00BEB72F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40751F28173E135D00BEB72F /* OpenGLES.framework */; };
+		40751F2B173E136300BEB72F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40751F2A173E136300BEB72F /* GLKit.framework */; };
+		40751F2D173E136900BEB72F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40751F2C173E136900BEB72F /* QuartzCore.framework */; };
+		409D27EB1760C737005F40F1 /* SoModelViewMatrixElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D27EA1760C737005F40F1 /* SoModelViewMatrixElement.m */; };
+		409D27F41760D3EA005F40F1 /* SoLogicalViewportElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D27F31760D3EA005F40F1 /* SoLogicalViewportElement.m */; };
+		409D27FA1760E233005F40F1 /* ShaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D27F91760E233005F40F1 /* ShaderHandler.m */; };
+		40B79ABB17531D160023E25F /* SoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B79ABA17531D160023E25F /* SoCamera.m */; };
+		40B79ABE175323BB0023E25F /* SoOrthographicsCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B79ABD175323BB0023E25F /* SoOrthographicsCamera.m */; };
+		40B79AC1175323E00023E25F /* SoPerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B79AC0175323E00023E25F /* SoPerspectiveCamera.m */; };
+		40C45649173BC9390022DDB4 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C45648173BC9390022DDB4 /* WheelView.m */; };
+		40C4564C173BD6F40022DDB4 /* PhotoWheelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C4564B173BD6F40022DDB4 /* PhotoWheelViewCell.m */; };
+		40C4564F173BD8280022DDB4 /* defaultPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C4564E173BD8280022DDB4 /* defaultPhoto.png */; };
+		40C45652173BDD5E0022DDB4 /* SpinGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C45651173BDD5E0022DDB4 /* SpinGestureRecognizer.m */; };
+		40DF6B9417520E300051AC55 /* SoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6B9317520E300051AC55 /* SoNode.m */; };
+		40DF6B9717520E700051AC55 /* SoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6B9617520E700051AC55 /* SoGroup.m */; };
+		40DF6B9A17520E9C0051AC55 /* SoShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6B9917520E9C0051AC55 /* SoShape.m */; };
+		40DF6B9D175215D70051AC55 /* SoCone.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6B9C175215D70051AC55 /* SoCone.m */; };
+		40DF6BA0175218AE0051AC55 /* SoCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6B9F175218AE0051AC55 /* SoCube.m */; };
+		40DF6BA3175219270051AC55 /* SoSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6BA2175219270051AC55 /* SoSphere.m */; };
+		40DF6BA61752198B0051AC55 /* SoCylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6BA51752198B0051AC55 /* SoCylinder.m */; };
+		40DF6BA917521A990051AC55 /* SoText2.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DF6BA817521A990051AC55 /* SoText2.m */; };
+		40E2DC8E17510A7B0087319B /* SceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E2DC8C17510A7B0087319B /* SceneViewController.m */; };
+		40E2DC8F17510A7B0087319B /* SceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2DC8D17510A7B0087319B /* SceneViewController.xib */; };
+		40E37875173A82CC00EC2F2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E37874173A82CC00EC2F2B /* UIKit.framework */; };
+		40E37877173A82CC00EC2F2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E37876173A82CC00EC2F2B /* Foundation.framework */; };
+		40E37879173A82CC00EC2F2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E37878173A82CC00EC2F2B /* CoreGraphics.framework */; };
+		40E3787F173A82CC00EC2F2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40E3787D173A82CC00EC2F2B /* InfoPlist.strings */; };
+		40E37881173A82CC00EC2F2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E37880173A82CC00EC2F2B /* main.m */; };
+		40E37885173A82CC00EC2F2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E37884173A82CC00EC2F2B /* AppDelegate.m */; };
+		40E37887173A82CC00EC2F2B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E37886173A82CC00EC2F2B /* Default.png */; };
+		40E37889173A82CC00EC2F2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E37888173A82CC00EC2F2B /* Default@2x.png */; };
+		40E3788B173A82CC00EC2F2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E3788A173A82CC00EC2F2B /* Default-568h@2x.png */; };
+		40E3788E173A82CC00EC2F2B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E3788D173A82CC00EC2F2B /* MasterViewController.m */; };
+		40E37891173A82CC00EC2F2B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E37890173A82CC00EC2F2B /* DetailViewController.m */; };
+		40E37894173A82CC00EC2F2B /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E37892173A82CC00EC2F2B /* MasterViewController.xib */; };
+		40E37897173A82CC00EC2F2B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E37895173A82CC00EC2F2B /* DetailViewController.xib */; };
+		40E378A0173A8F1700EC2F2B /* NameEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E3789E173A8F1700EC2F2B /* NameEditorViewController.m */; };
+		40E378A1173A8F1700EC2F2B /* NameEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E3789F173A8F1700EC2F2B /* NameEditorViewController.xib */; };
+		40F8748F1753BD7E008510A3 /* SoElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F8748E1753BD7E008510A3 /* SoElement.m */; };
+		40F874921753BD91008510A3 /* SoProjectionMatrixElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F874911753BD91008510A3 /* SoProjectionMatrixElement.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		402F93BD17618B2F001C41A3 /* SoSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoSeparator.h; path = nodes/SoSeparator.h; sourceTree = "<group>"; };
+		402F93BE17618B2F001C41A3 /* SoSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoSeparator.m; path = nodes/SoSeparator.m; sourceTree = "<group>"; };
+		402F93C017618D72001C41A3 /* SoTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoTransformation.h; path = nodes/SoTransformation.h; sourceTree = "<group>"; };
+		402F93C117618D72001C41A3 /* SoTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoTransformation.m; path = nodes/SoTransformation.m; sourceTree = "<group>"; };
+		402F93C417618DB1001C41A3 /* SoTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoTransform.h; path = nodes/SoTransform.h; sourceTree = "<group>"; };
+		402F93C517618DB1001C41A3 /* SoTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoTransform.m; path = nodes/SoTransform.m; sourceTree = "<group>"; };
+		402F93C717618DBD001C41A3 /* SoTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoTranslation.h; path = nodes/SoTranslation.h; sourceTree = "<group>"; };
+		402F93C817618DBD001C41A3 /* SoTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoTranslation.m; path = nodes/SoTranslation.m; sourceTree = "<group>"; };
+		402F93CA17618DCA001C41A3 /* SoScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoScale.h; path = nodes/SoScale.h; sourceTree = "<group>"; };
+		402F93CB17618DCA001C41A3 /* SoScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoScale.m; path = nodes/SoScale.m; sourceTree = "<group>"; };
+		402F93CD17618DD5001C41A3 /* SoRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoRotation.h; sourceTree = "<group>"; };
+		402F93CE17618DD5001C41A3 /* SoRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoRotation.m; sourceTree = "<group>"; };
+		4034E03417621FD80002C56F /* SoMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoMaterial.h; path = nodes/SoMaterial.h; sourceTree = "<group>"; };
+		4034E03517621FD80002C56F /* SoMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoMaterial.m; path = nodes/SoMaterial.m; sourceTree = "<group>"; };
+		4034E037176226790002C56F /* SoReplacedElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoReplacedElement.h; path = elements/SoReplacedElement.h; sourceTree = "<group>"; };
+		4034E038176226790002C56F /* SoReplacedElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoReplacedElement.m; path = elements/SoReplacedElement.m; sourceTree = "<group>"; };
+		4034E03A176226B30002C56F /* SoAmbientColorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoAmbientColorElement.h; path = elements/SoAmbientColorElement.h; sourceTree = "<group>"; };
+		4034E03B176226B30002C56F /* SoAmbientColorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoAmbientColorElement.m; path = elements/SoAmbientColorElement.m; sourceTree = "<group>"; };
+		4034E03D17622A390002C56F /* SoDiffuseColorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoDiffuseColorElement.h; path = elements/SoDiffuseColorElement.h; sourceTree = "<group>"; };
+		4034E03E17622A390002C56F /* SoDiffuseColorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoDiffuseColorElement.m; path = elements/SoDiffuseColorElement.m; sourceTree = "<group>"; };
+		4034E04017622A4D0002C56F /* SoEmissiveColorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoEmissiveColorElement.h; path = elements/SoEmissiveColorElement.h; sourceTree = "<group>"; };
+		4034E04117622A4D0002C56F /* SoEmissiveColorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoEmissiveColorElement.m; path = elements/SoEmissiveColorElement.m; sourceTree = "<group>"; };
+		4034E04317622A580002C56F /* SoSpecularColorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoSpecularColorElement.h; path = elements/SoSpecularColorElement.h; sourceTree = "<group>"; };
+		4034E04417622A580002C56F /* SoSpecularColorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoSpecularColorElement.m; path = elements/SoSpecularColorElement.m; sourceTree = "<group>"; };
+		4034E04617622A600002C56F /* SoShininessElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoShininessElement.h; path = elements/SoShininessElement.h; sourceTree = "<group>"; };
+		4034E04717622A600002C56F /* SoShininessElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoShininessElement.m; path = elements/SoShininessElement.m; sourceTree = "<group>"; };
+		4034E04917622A680002C56F /* SoTransparencyElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoTransparencyElement.h; path = elements/SoTransparencyElement.h; sourceTree = "<group>"; };
+		4034E04A17622A680002C56F /* SoTransparencyElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoTransparencyElement.m; path = elements/SoTransparencyElement.m; sourceTree = "<group>"; };
+		4052A3DF173E44880038505F /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		4052A3E1173E44D40038505F /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		40751F28173E135D00BEB72F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		40751F2A173E136300BEB72F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		40751F2C173E136900BEB72F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		409D27E91760C737005F40F1 /* SoModelViewMatrixElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoModelViewMatrixElement.h; path = elements/SoModelViewMatrixElement.h; sourceTree = "<group>"; };
+		409D27EA1760C737005F40F1 /* SoModelViewMatrixElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoModelViewMatrixElement.m; path = elements/SoModelViewMatrixElement.m; sourceTree = "<group>"; };
+		409D27F21760D3EA005F40F1 /* SoLogicalViewportElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoLogicalViewportElement.h; path = elements/SoLogicalViewportElement.h; sourceTree = "<group>"; };
+		409D27F31760D3EA005F40F1 /* SoLogicalViewportElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoLogicalViewportElement.m; path = elements/SoLogicalViewportElement.m; sourceTree = "<group>"; };
+		409D27F81760E233005F40F1 /* ShaderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHandler.h; path = core/ShaderHandler.h; sourceTree = "<group>"; };
+		409D27F91760E233005F40F1 /* ShaderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShaderHandler.m; path = core/ShaderHandler.m; sourceTree = "<group>"; };
+		40B79AB917531D160023E25F /* SoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoCamera.h; path = nodes/SoCamera.h; sourceTree = "<group>"; };
+		40B79ABA17531D160023E25F /* SoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoCamera.m; path = nodes/SoCamera.m; sourceTree = "<group>"; };
+		40B79ABC175323BB0023E25F /* SoOrthographicsCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoOrthographicsCamera.h; path = nodes/SoOrthographicsCamera.h; sourceTree = "<group>"; };
+		40B79ABD175323BB0023E25F /* SoOrthographicsCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoOrthographicsCamera.m; path = nodes/SoOrthographicsCamera.m; sourceTree = "<group>"; };
+		40B79ABF175323E00023E25F /* SoPerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoPerspectiveCamera.h; path = nodes/SoPerspectiveCamera.h; sourceTree = "<group>"; };
+		40B79AC0175323E00023E25F /* SoPerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoPerspectiveCamera.m; path = nodes/SoPerspectiveCamera.m; sourceTree = "<group>"; };
+		40C45647173BC9390022DDB4 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		40C45648173BC9390022DDB4 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		40C4564A173BD6F40022DDB4 /* PhotoWheelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoWheelViewCell.h; sourceTree = "<group>"; };
+		40C4564B173BD6F40022DDB4 /* PhotoWheelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoWheelViewCell.m; sourceTree = "<group>"; };
+		40C4564E173BD8280022DDB4 /* defaultPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPhoto.png; sourceTree = "<group>"; };
+		40C45650173BDD5E0022DDB4 /* SpinGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinGestureRecognizer.h; sourceTree = "<group>"; };
+		40C45651173BDD5E0022DDB4 /* SpinGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinGestureRecognizer.m; sourceTree = "<group>"; };
+		40DF6B9217520E300051AC55 /* SoNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoNode.h; path = nodes/SoNode.h; sourceTree = "<group>"; };
+		40DF6B9317520E300051AC55 /* SoNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoNode.m; path = nodes/SoNode.m; sourceTree = "<group>"; };
+		40DF6B9517520E700051AC55 /* SoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoGroup.h; path = nodes/SoGroup.h; sourceTree = "<group>"; };
+		40DF6B9617520E700051AC55 /* SoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoGroup.m; path = nodes/SoGroup.m; sourceTree = "<group>"; };
+		40DF6B9817520E9C0051AC55 /* SoShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoShape.h; path = nodes/SoShape.h; sourceTree = "<group>"; };
+		40DF6B9917520E9C0051AC55 /* SoShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoShape.m; path = nodes/SoShape.m; sourceTree = "<group>"; };
+		40DF6B9B175215D70051AC55 /* SoCone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoCone.h; path = nodes/SoCone.h; sourceTree = "<group>"; };
+		40DF6B9C175215D70051AC55 /* SoCone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoCone.m; path = nodes/SoCone.m; sourceTree = "<group>"; };
+		40DF6B9E175218AE0051AC55 /* SoCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoCube.h; path = nodes/SoCube.h; sourceTree = "<group>"; };
+		40DF6B9F175218AE0051AC55 /* SoCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoCube.m; path = nodes/SoCube.m; sourceTree = "<group>"; };
+		40DF6BA1175219270051AC55 /* SoSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoSphere.h; path = nodes/SoSphere.h; sourceTree = "<group>"; };
+		40DF6BA2175219270051AC55 /* SoSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoSphere.m; path = nodes/SoSphere.m; sourceTree = "<group>"; };
+		40DF6BA41752198B0051AC55 /* SoCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoCylinder.h; path = nodes/SoCylinder.h; sourceTree = "<group>"; };
+		40DF6BA51752198B0051AC55 /* SoCylinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoCylinder.m; path = nodes/SoCylinder.m; sourceTree = "<group>"; };
+		40DF6BA717521A980051AC55 /* SoText2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoText2.h; path = nodes/SoText2.h; sourceTree = "<group>"; };
+		40DF6BA817521A990051AC55 /* SoText2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoText2.m; path = nodes/SoText2.m; sourceTree = "<group>"; };
+		40E2DC8B17510A7B0087319B /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneViewController.h; sourceTree = "<group>"; };
+		40E2DC8C17510A7B0087319B /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneViewController.m; sourceTree = "<group>"; };
+		40E2DC8D17510A7B0087319B /* SceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SceneViewController.xib; sourceTree = "<group>"; };
+		40E37871173A82CC00EC2F2B /* Seismic3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seismic3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E37874173A82CC00EC2F2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40E37876173A82CC00EC2F2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40E37878173A82CC00EC2F2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40E3787C173A82CC00EC2F2B /* Seismic3D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Seismic3D-Info.plist"; sourceTree = "<group>"; };
+		40E3787E173A82CC00EC2F2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40E37880173A82CC00EC2F2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40E37882173A82CC00EC2F2B /* Seismic3D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Seismic3D-Prefix.pch"; sourceTree = "<group>"; };
+		40E37883173A82CC00EC2F2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40E37884173A82CC00EC2F2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40E37886173A82CC00EC2F2B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		40E37888173A82CC00EC2F2B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		40E3788A173A82CC00EC2F2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		40E3788C173A82CC00EC2F2B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		40E3788D173A82CC00EC2F2B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		40E3788F173A82CC00EC2F2B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		40E37890173A82CC00EC2F2B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		40E37893173A82CC00EC2F2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		40E37896173A82CC00EC2F2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		40E3789D173A8F1700EC2F2B /* NameEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameEditorViewController.h; sourceTree = "<group>"; };
+		40E3789E173A8F1700EC2F2B /* NameEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameEditorViewController.m; sourceTree = "<group>"; };
+		40E3789F173A8F1700EC2F2B /* NameEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameEditorViewController.xib; sourceTree = "<group>"; };
+		40F8748D1753BD7E008510A3 /* SoElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoElement.h; path = elements/SoElement.h; sourceTree = "<group>"; };
+		40F8748E1753BD7E008510A3 /* SoElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoElement.m; path = elements/SoElement.m; sourceTree = "<group>"; };
+		40F874901753BD91008510A3 /* SoProjectionMatrixElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoProjectionMatrixElement.h; path = elements/SoProjectionMatrixElement.h; sourceTree = "<group>"; };
+		40F874911753BD91008510A3 /* SoProjectionMatrixElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoProjectionMatrixElement.m; path = elements/SoProjectionMatrixElement.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40E3786E173A82CC00EC2F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40751F2D173E136900BEB72F /* QuartzCore.framework in Frameworks */,
+				40751F2B173E136300BEB72F /* GLKit.framework in Frameworks */,
+				40751F29173E135D00BEB72F /* OpenGLES.framework in Frameworks */,
+				40E37875173A82CC00EC2F2B /* UIKit.framework in Frameworks */,
+				40E37877173A82CC00EC2F2B /* Foundation.framework in Frameworks */,
+				40E37879173A82CC00EC2F2B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		402F93C317618D7E001C41A3 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				402F93C017618D72001C41A3 /* SoTransformation.h */,
+				402F93C117618D72001C41A3 /* SoTransformation.m */,
+				402F93C417618DB1001C41A3 /* SoTransform.h */,
+				402F93C517618DB1001C41A3 /* SoTransform.m */,
+				402F93C717618DBD001C41A3 /* SoTranslation.h */,
+				402F93C817618DBD001C41A3 /* SoTranslation.m */,
+				402F93CA17618DCA001C41A3 /* SoScale.h */,
+				402F93CB17618DCA001C41A3 /* SoScale.m */,
+				402F93CD17618DD5001C41A3 /* SoRotation.h */,
+				402F93CE17618DD5001C41A3 /* SoRotation.m */,
+			);
+			name = Transform;
+			sourceTree = "<group>";
+		};
+		4034E03317621F610002C56F /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				4034E03417621FD80002C56F /* SoMaterial.h */,
+				4034E03517621FD80002C56F /* SoMaterial.m */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
+		4052A3DE173E44750038505F /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				4052A3DF173E44880038505F /* SimpleVertex.glsl */,
+				4052A3E1173E44D40038505F /* SimpleFragment.glsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		409D27FB1760EBA9005F40F1 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				40DF6B9817520E9C0051AC55 /* SoShape.h */,
+				40DF6B9917520E9C0051AC55 /* SoShape.m */,
+				40DF6B9B175215D70051AC55 /* SoCone.h */,
+				40DF6B9C175215D70051AC55 /* SoCone.m */,
+				40DF6B9E175218AE0051AC55 /* SoCube.h */,
+				40DF6B9F175218AE0051AC55 /* SoCube.m */,
+				40DF6BA1175219270051AC55 /* SoSphere.h */,
+				40DF6BA2175219270051AC55 /* SoSphere.m */,
+				40DF6BA41752198B0051AC55 /* SoCylinder.h */,
+				40DF6BA51752198B0051AC55 /* SoCylinder.m */,
+				40DF6BA717521A980051AC55 /* SoText2.h */,
+				40DF6BA817521A990051AC55 /* SoText2.m */,
+			);
+			name = Shape;
+			sourceTree = "<group>";
+		};
+		40AA6E8E176064C000A90006 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				409D27F81760E233005F40F1 /* ShaderHandler.h */,
+				409D27F91760E233005F40F1 /* ShaderHandler.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		40C4564D173BD81B0022DDB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4052A3DE173E44750038505F /* Shaders */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		40DF6B8F17520D5C0051AC55 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				40AA6E8E176064C000A90006 /* Foundation */,
+				40F8748C1753BD5F008510A3 /* Element */,
+				40DF6B9117520D810051AC55 /* BaseNode */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		40DF6B9117520D810051AC55 /* BaseNode */ = {
+			isa = PBXGroup;
+			children = (
+				4034E03317621F610002C56F /* Appearance */,
+				402F93C317618D7E001C41A3 /* Transform */,
+				409D27FB1760EBA9005F40F1 /* Shape */,
+				40DF6B9217520E300051AC55 /* SoNode.h */,
+				40DF6B9317520E300051AC55 /* SoNode.m */,
+				40DF6B9517520E700051AC55 /* SoGroup.h */,
+				40DF6B9617520E700051AC55 /* SoGroup.m */,
+				402F93BD17618B2F001C41A3 /* SoSeparator.h */,
+				402F93BE17618B2F001C41A3 /* SoSeparator.m */,
+				40B79AB917531D160023E25F /* SoCamera.h */,
+				40B79ABA17531D160023E25F /* SoCamera.m */,
+				40B79ABC175323BB0023E25F /* SoOrthographicsCamera.h */,
+				40B79ABD175323BB0023E25F /* SoOrthographicsCamera.m */,
+				40B79ABF175323E00023E25F /* SoPerspectiveCamera.h */,
+				40B79AC0175323E00023E25F /* SoPerspectiveCamera.m */,
+			);
+			name = BaseNode;
+			sourceTree = "<group>";
+		};
+		40E2DC6E1750FD940087319B /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				40E3789F173A8F1700EC2F2B /* NameEditorViewController.xib */,
+				40E37892173A82CC00EC2F2B /* MasterViewController.xib */,
+				40E37895173A82CC00EC2F2B /* DetailViewController.xib */,
+				40E2DC8D17510A7B0087319B /* SceneViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		40E2DC6F1750FDA90087319B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40C4564A173BD6F40022DDB4 /* PhotoWheelViewCell.h */,
+				40C4564B173BD6F40022DDB4 /* PhotoWheelViewCell.m */,
+				40C45647173BC9390022DDB4 /* WheelView.h */,
+				40C45648173BC9390022DDB4 /* WheelView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		40E2DC701750FDC40087319B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40E3788C173A82CC00EC2F2B /* MasterViewController.h */,
+				40E3788D173A82CC00EC2F2B /* MasterViewController.m */,
+				40E3788F173A82CC00EC2F2B /* DetailViewController.h */,
+				40E37890173A82CC00EC2F2B /* DetailViewController.m */,
+				40E2DC8B17510A7B0087319B /* SceneViewController.h */,
+				40E2DC8C17510A7B0087319B /* SceneViewController.m */,
+				40E3789D173A8F1700EC2F2B /* NameEditorViewController.h */,
+				40E3789E173A8F1700EC2F2B /* NameEditorViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		40E37868173A82CC00EC2F2B = {
+			isa = PBXGroup;
+			children = (
+				40C4564D173BD81B0022DDB4 /* Resources */,
+				40E3787A173A82CC00EC2F2B /* Seismic3D */,
+				40E37873173A82CC00EC2F2B /* Frameworks */,
+				40E37872173A82CC00EC2F2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40E37872173A82CC00EC2F2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40E37871173A82CC00EC2F2B /* Seismic3D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40E37873173A82CC00EC2F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40751F2C173E136900BEB72F /* QuartzCore.framework */,
+				40751F2A173E136300BEB72F /* GLKit.framework */,
+				40751F28173E135D00BEB72F /* OpenGLES.framework */,
+				40E37874173A82CC00EC2F2B /* UIKit.framework */,
+				40E37876173A82CC00EC2F2B /* Foundation.framework */,
+				40E37878173A82CC00EC2F2B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40E3787A173A82CC00EC2F2B /* Seismic3D */ = {
+			isa = PBXGroup;
+			children = (
+				40DF6B8F17520D5C0051AC55 /* Classes */,
+				40E2DC701750FDC40087319B /* Controllers */,
+				40E2DC6F1750FDA90087319B /* Views */,
+				40E2DC6E1750FD940087319B /* XIBs */,
+				40E37883173A82CC00EC2F2B /* AppDelegate.h */,
+				40E37884173A82CC00EC2F2B /* AppDelegate.m */,
+				40C45650173BDD5E0022DDB4 /* SpinGestureRecognizer.h */,
+				40C45651173BDD5E0022DDB4 /* SpinGestureRecognizer.m */,
+				40E3787B173A82CC00EC2F2B /* Supporting Files */,
+			);
+			path = Seismic3D;
+			sourceTree = "<group>";
+		};
+		40E3787B173A82CC00EC2F2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40C4564E173BD8280022DDB4 /* defaultPhoto.png */,
+				40E3787C173A82CC00EC2F2B /* Seismic3D-Info.plist */,
+				40E3787D173A82CC00EC2F2B /* InfoPlist.strings */,
+				40E37880173A82CC00EC2F2B /* main.m */,
+				40E37882173A82CC00EC2F2B /* Seismic3D-Prefix.pch */,
+				40E37886173A82CC00EC2F2B /* Default.png */,
+				40E37888173A82CC00EC2F2B /* Default@2x.png */,
+				40E3788A173A82CC00EC2F2B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F8748C1753BD5F008510A3 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				40F8748D1753BD7E008510A3 /* SoElement.h */,
+				40F8748E1753BD7E008510A3 /* SoElement.m */,
+				40F874901753BD91008510A3 /* SoProjectionMatrixElement.h */,
+				40F874911753BD91008510A3 /* SoProjectionMatrixElement.m */,
+				409D27E91760C737005F40F1 /* SoModelViewMatrixElement.h */,
+				409D27EA1760C737005F40F1 /* SoModelViewMatrixElement.m */,
+				409D27F21760D3EA005F40F1 /* SoLogicalViewportElement.h */,
+				409D27F31760D3EA005F40F1 /* SoLogicalViewportElement.m */,
+				4034E037176226790002C56F /* SoReplacedElement.h */,
+				4034E038176226790002C56F /* SoReplacedElement.m */,
+				4034E03A176226B30002C56F /* SoAmbientColorElement.h */,
+				4034E03B176226B30002C56F /* SoAmbientColorElement.m */,
+				4034E03D17622A390002C56F /* SoDiffuseColorElement.h */,
+				4034E03E17622A390002C56F /* SoDiffuseColorElement.m */,
+				4034E04017622A4D0002C56F /* SoEmissiveColorElement.h */,
+				4034E04117622A4D0002C56F /* SoEmissiveColorElement.m */,
+				4034E04317622A580002C56F /* SoSpecularColorElement.h */,
+				4034E04417622A580002C56F /* SoSpecularColorElement.m */,
+				4034E04617622A600002C56F /* SoShininessElement.h */,
+				4034E04717622A600002C56F /* SoShininessElement.m */,
+				4034E04917622A680002C56F /* SoTransparencyElement.h */,
+				4034E04A17622A680002C56F /* SoTransparencyElement.m */,
+			);
+			name = Element;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40E37870173A82CC00EC2F2B /* Seismic3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E3789A173A82CC00EC2F2B /* Build configuration list for PBXNativeTarget "Seismic3D" */;
+			buildPhases = (
+				40E3786D173A82CC00EC2F2B /* Sources */,
+				40E3786E173A82CC00EC2F2B /* Frameworks */,
+				40E3786F173A82CC00EC2F2B /* Resources */,
+				40C45653173BE4D10022DDB4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seismic3D;
+			productName = Seismic3D;
+			productReference = 40E37871173A82CC00EC2F2B /* Seismic3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40E37869173A82CC00EC2F2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Biaoqin Wen";
+			};
+			buildConfigurationList = 40E3786C173A82CC00EC2F2B /* Build configuration list for PBXProject "Seismic3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40E37868173A82CC00EC2F2B;
+			productRefGroup = 40E37872173A82CC00EC2F2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40E37870173A82CC00EC2F2B /* Seismic3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40E3786F173A82CC00EC2F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E3787F173A82CC00EC2F2B /* InfoPlist.strings in Resources */,
+				40E37887173A82CC00EC2F2B /* Default.png in Resources */,
+				40E37889173A82CC00EC2F2B /* Default@2x.png in Resources */,
+				40E3788B173A82CC00EC2F2B /* Default-568h@2x.png in Resources */,
+				40E37894173A82CC00EC2F2B /* MasterViewController.xib in Resources */,
+				40E37897173A82CC00EC2F2B /* DetailViewController.xib in Resources */,
+				40E378A1173A8F1700EC2F2B /* NameEditorViewController.xib in Resources */,
+				40C4564F173BD8280022DDB4 /* defaultPhoto.png in Resources */,
+				4052A3E0173E44880038505F /* SimpleVertex.glsl in Resources */,
+				4052A3E2173E44D40038505F /* SimpleFragment.glsl in Resources */,
+				40E2DC8F17510A7B0087319B /* SceneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40C45653173BE4D10022DDB4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40E3786D173A82CC00EC2F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E37881173A82CC00EC2F2B /* main.m in Sources */,
+				40E37885173A82CC00EC2F2B /* AppDelegate.m in Sources */,
+				40E3788E173A82CC00EC2F2B /* MasterViewController.m in Sources */,
+				40E37891173A82CC00EC2F2B /* DetailViewController.m in Sources */,
+				40E378A0173A8F1700EC2F2B /* NameEditorViewController.m in Sources */,
+				40C45649173BC9390022DDB4 /* WheelView.m in Sources */,
+				40C4564C173BD6F40022DDB4 /* PhotoWheelViewCell.m in Sources */,
+				40C45652173BDD5E0022DDB4 /* SpinGestureRecognizer.m in Sources */,
+				40E2DC8E17510A7B0087319B /* SceneViewController.m in Sources */,
+				40DF6B9417520E300051AC55 /* SoNode.m in Sources */,
+				40DF6B9717520E700051AC55 /* SoGroup.m in Sources */,
+				40DF6B9A17520E9C0051AC55 /* SoShape.m in Sources */,
+				40DF6B9D175215D70051AC55 /* SoCone.m in Sources */,
+				40DF6BA0175218AE0051AC55 /* SoCube.m in Sources */,
+				40DF6BA3175219270051AC55 /* SoSphere.m in Sources */,
+				40DF6BA61752198B0051AC55 /* SoCylinder.m in Sources */,
+				40DF6BA917521A990051AC55 /* SoText2.m in Sources */,
+				40B79ABB17531D160023E25F /* SoCamera.m in Sources */,
+				40B79ABE175323BB0023E25F /* SoOrthographicsCamera.m in Sources */,
+				40B79AC1175323E00023E25F /* SoPerspectiveCamera.m in Sources */,
+				40F8748F1753BD7E008510A3 /* SoElement.m in Sources */,
+				40F874921753BD91008510A3 /* SoProjectionMatrixElement.m in Sources */,
+				409D27EB1760C737005F40F1 /* SoModelViewMatrixElement.m in Sources */,
+				409D27F41760D3EA005F40F1 /* SoLogicalViewportElement.m in Sources */,
+				409D27FA1760E233005F40F1 /* ShaderHandler.m in Sources */,
+				402F93BF17618B2F001C41A3 /* SoSeparator.m in Sources */,
+				402F93C217618D72001C41A3 /* SoTransformation.m in Sources */,
+				402F93C617618DB1001C41A3 /* SoTransform.m in Sources */,
+				402F93C917618DBD001C41A3 /* SoTranslation.m in Sources */,
+				402F93CC17618DCA001C41A3 /* SoScale.m in Sources */,
+				402F93CF17618DD5001C41A3 /* SoRotation.m in Sources */,
+				4034E03617621FD80002C56F /* SoMaterial.m in Sources */,
+				4034E039176226790002C56F /* SoReplacedElement.m in Sources */,
+				4034E03C176226B30002C56F /* SoAmbientColorElement.m in Sources */,
+				4034E03F17622A390002C56F /* SoDiffuseColorElement.m in Sources */,
+				4034E04217622A4D0002C56F /* SoEmissiveColorElement.m in Sources */,
+				4034E04517622A580002C56F /* SoSpecularColorElement.m in Sources */,
+				4034E04817622A600002C56F /* SoShininessElement.m in Sources */,
+				4034E04B17622A680002C56F /* SoTransparencyElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40E3787D173A82CC00EC2F2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E3787E173A82CC00EC2F2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40E37892173A82CC00EC2F2B /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E37893173A82CC00EC2F2B /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		40E37895173A82CC00EC2F2B /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E37896173A82CC00EC2F2B /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40E37898173A82CC00EC2F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		40E37899173A82CC00EC2F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40E3789B173A82CC00EC2F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seismic3D/Seismic3D-Prefix.pch";
+				INFOPLIST_FILE = "Seismic3D/Seismic3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40E3789C173A82CC00EC2F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seismic3D/Seismic3D-Prefix.pch";
+				INFOPLIST_FILE = "Seismic3D/Seismic3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40E3786C173A82CC00EC2F2B /* Build configuration list for PBXProject "Seismic3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E37898173A82CC00EC2F2B /* Debug */,
+				40E37899173A82CC00EC2F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E3789A173A82CC00EC2F2B /* Build configuration list for PBXNativeTarget "Seismic3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E3789B173A82CC00EC2F2B /* Debug */,
+				40E3789C173A82CC00EC2F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40E37869173A82CC00EC2F2B /* Project object */;
+}

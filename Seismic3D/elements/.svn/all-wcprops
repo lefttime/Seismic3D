@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements
+END
+SoAmbientColorElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoAmbientColorElement.h
+END
+SoElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoElement.h
+END
+SoLogicalViewportElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoLogicalViewportElement.m
+END
+SoReplacedElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoReplacedElement.h
+END
+SoModelViewMatrixElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoModelViewMatrixElement.h
+END
+SoProjectionMatrixElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoProjectionMatrixElement.h
+END
+SoAmbientColorElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoAmbientColorElement.m
+END
+SoElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoElement.m
+END
+SoReplacedElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoReplacedElement.m
+END
+SoModelViewMatrixElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoModelViewMatrixElement.m
+END
+SoProjectionMatrixElement.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoProjectionMatrixElement.m
+END
+SoLogicalViewportElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/elements/SoLogicalViewportElement.h
+END

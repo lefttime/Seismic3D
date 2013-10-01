@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/seismic3d/!svn/ver/4/trunk/Seismic3D/Seismic3D/en.lproj
+END
+InfoPlist.strings
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/seismic3d/!svn/ver/2/trunk/Seismic3D/Seismic3D/en.lproj/InfoPlist.strings
+END
+DetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/seismic3d/!svn/ver/4/trunk/Seismic3D/Seismic3D/en.lproj/DetailViewController.xib
+END
+MasterViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/seismic3d/!svn/ver/2/trunk/Seismic3D/Seismic3D/en.lproj/MasterViewController.xib
+END

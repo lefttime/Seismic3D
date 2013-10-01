@@ -1,0 +1,174 @@
+//
+//  SoCube.m
+//  Seismic3D
+//
+//  Created by Biaoqin Wen on 5/26/13.
+//  Copyright (c) 2013 Biaoqin Wen. All rights reserved.
+//
+
+#import "SoCube.h"
+
+#import "SoDrawStyleElement.h"
+
+#define BUFFER_OFFSET(i) ((char *)NULL + (i))
+
+GLfloat gCubeVertexData[216] =
+{
+    // Data layout for each line below is:
+    // positionX, positionY, positionZ,     normalX, normalY, normalZ,
+    0.5f,-0.5f,-0.5f,       1.0f, 0.0f, 0.0f,
+    0.5f, 0.5f,-0.5f,       1.0f, 0.0f, 0.0f,
+    0.5f,-0.5f, 0.5f,       1.0f, 0.0f, 0.0f,
+    0.5f,-0.5f, 0.5f,       1.0f, 0.0f, 0.0f,
+    0.5f, 0.5f,-0.5f,       1.0f, 0.0f, 0.0f,
+    0.5f, 0.5f, 0.5f,       1.0f, 0.0f, 0.0f,
+    
+    0.5f, 0.5f,-0.5f,       0.0f, 1.0f, 0.0f,
+   -0.5f, 0.5f,-0.5f,       0.0f, 1.0f, 0.0f,
+    0.5f, 0.5f, 0.5f,       0.0f, 1.0f, 0.0f,
+    0.5f, 0.5f, 0.5f,       0.0f, 1.0f, 0.0f,
+   -0.5f, 0.5f,-0.5f,       0.0f, 1.0f, 0.0f,
+   -0.5f, 0.5f, 0.5f,       0.0f, 1.0f, 0.0f,
+    
+   -0.5f, 0.5f,-0.5f,      -1.0f, 0.0f, 0.0f,
+   -0.5f,-0.5f,-0.5f,      -1.0f, 0.0f, 0.0f,
+   -0.5f, 0.5f, 0.5f,      -1.0f, 0.0f, 0.0f,
+   -0.5f, 0.5f, 0.5f,      -1.0f, 0.0f, 0.0f,
+   -0.5f,-0.5f,-0.5f,      -1.0f, 0.0f, 0.0f,
+   -0.5f,-0.5f, 0.5f,      -1.0f, 0.0f, 0.0f,
+    
+   -0.5f,-0.5f,-0.5f,       0.0f,-1.0f, 0.0f,
+    0.5f,-0.5f,-0.5f,       0.0f,-1.0f, 0.0f,
+   -0.5f,-0.5f, 0.5f,       0.0f,-1.0f, 0.0f,
+   -0.5f,-0.5f, 0.5f,       0.0f,-1.0f, 0.0f,
+    0.5f,-0.5f,-0.5f,       0.0f,-1.0f, 0.0f,
+    0.5f,-0.5f, 0.5f,       0.0f,-1.0f, 0.0f,
+    
+    0.5f, 0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+   -0.5f, 0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+    0.5f,-0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+    0.5f,-0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+   -0.5f, 0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+   -0.5f,-0.5f, 0.5f,       0.0f, 0.0f, 1.0f,
+    
+    0.5f,-0.5f,-0.5f,       0.0f, 0.0f,-1.0f,
+   -0.5f,-0.5f,-0.5f,       0.0f, 0.0f,-1.0f,
+    0.5f, 0.5f,-0.5f,       0.0f, 0.0f,-1.0f,
+    0.5f, 0.5f,-0.5f,       0.0f, 0.0f,-1.0f,
+   -0.5f,-0.5f,-0.5f,       0.0f, 0.0f,-1.0f,
+   -0.5f, 0.5f,-0.5f,       0.0f, 0.0f,-1.0f
+};
+
+@interface SoCube() {
+    GLuint _program;
+    
+    GLKMatrix4 _modelViewProjectionMatrix;
+    GLKMatrix3 _normalMatrix;
+    
+    GLuint _vertexArray;
+    GLuint _vertexBuffer;
+}
+
+@property (assign) float width;
+@property (assign) float height;
+@property (assign) float depth;
+
+@property (strong, nonatomic) GLKBaseEffect *effect;
+
+@end
+
+@implementation SoCube
+@synthesize width = _width;
+@synthesize height= _height;
+@synthesize depth = _depth;
+
+- (id) init
+{
+    self = [super init];
+    if (self) {
+        self.width = 2;
+        self.height= 2;
+        self.depth = 2;
+        
+        [self setupGL];
+    }
+    
+    return self;
+}
+
+- (void) dealloc
+{
+    [self tearDownGL];
+}
+
+- (void) setupGL
+{
+    self.effect = [[GLKBaseEffect alloc] init];
+    self.effect.light0.enabled = GL_TRUE;
+    
+    glGenVertexArraysOES(1, &_vertexArray);
+    glBindVertexArrayOES(_vertexArray);
+    
+    glGenBuffers(1, &_vertexBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
+    
+    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
+    glEnableVertexAttribArray(GLKVertexAttribNormal);
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(12));
+    
+    glBindVertexArrayOES(0);
+}
+
+
+- (void)tearDownGL
+{
+    glDeleteBuffers(1, &_vertexBuffer);
+    glDeleteVertexArraysOES(1, &_vertexArray);
+    
+    self.effect = nil;
+    
+    if (_program) {
+        glDeleteProgram(_program);
+        _program = 0;
+    }
+}
+
+- (void) update
+{
+    self.effect.transform.projectionMatrix = [[SoProjectionMatrixElement sharedInstance] matrix];
+    
+    GLKMatrix4 modelViewMatrix = [[SoModelViewMatrixElement sharedInstance] matrix];
+    modelViewMatrix = GLKMatrix4Scale(modelViewMatrix, self.width, self.height, self.depth);
+    self.effect.transform.modelviewMatrix = modelViewMatrix;
+    
+    self.effect.material.ambientColor = [[SoAmbientColorElement sharedInstance] color];
+    self.effect.material.diffuseColor = [[SoDiffuseColorElement sharedInstance] color];
+    self.effect.material.specularColor= [[SoSpecularColorElement sharedInstance] color];
+    self.effect.material.emissiveColor= [[SoEmissiveColorElement sharedInstance] color];
+    self.effect.material.shininess = [[SoShininessElement sharedInstance] shininess];
+}
+
+- (void) render
+{
+    glBindVertexArrayOES(_vertexArray);
+    
+    GLboolean depthFlag;
+    glGetBooleanv(GL_DEPTH_TEST, &depthFlag);
+    
+    glEnable(GL_DEPTH_TEST);
+    // Render the object with GLKit
+    [self.effect prepareToDraw];
+
+    if ([[SoDrawStyleElement sharedInstance] style] == DrawStyleElement_Filled) {
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+    } else {
+        glDrawArrays(GL_LINES, 0, 36);
+    }
+    if (depthFlag == GL_FALSE) {
+        glDisable(GL_DEPTH_TEST);
+    }
+}
+
+@end

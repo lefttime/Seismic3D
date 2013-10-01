@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes
+END
+SoScale.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoScale.h
+END
+SoCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCamera.h
+END
+SoOrthographicsCamera.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoOrthographicsCamera.m
+END
+SoNode.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoNode.m
+END
+SoSphere.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoSphere.m
+END
+SoScale.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoScale.m
+END
+SoCamera.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCamera.m
+END
+SoCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCube.h
+END
+SoCube.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCube.m
+END
+SoCone.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCone.h
+END
+SoCone.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCone.m
+END
+SoGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoGroup.h
+END
+SoMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoMaterial.h
+END
+SoTranslation.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTranslation.h
+END
+SoShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoShape.h
+END
+SoSeparator.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoSeparator.h
+END
+SoGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoGroup.m
+END
+SoPerspectiveCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoPerspectiveCamera.h
+END
+SoMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoMaterial.m
+END
+SoTranslation.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTranslation.m
+END
+SoShape.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoShape.m
+END
+SoSeparator.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoSeparator.m
+END
+SoTransformation.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTransformation.h
+END
+SoText2.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoText2.h
+END
+SoPerspectiveCamera.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoPerspectiveCamera.m
+END
+SoCylinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCylinder.h
+END
+SoTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTransform.h
+END
+SoText2.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoText2.m
+END
+SoTransformation.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTransformation.m
+END
+SoCylinder.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoCylinder.m
+END
+SoTransform.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoTransform.m
+END
+SoNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoNode.h
+END
+SoOrthographicsCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoOrthographicsCamera.h
+END
+SoSphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/seismic3d/!svn/ver/7/trunk/Seismic3D/Seismic3D/nodes/SoSphere.h
+END
